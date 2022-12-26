@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK</title>
+    <link rel="stylesheet" href="css/style.css?=v1">
+    <script src="https://kit.fontawesome.com/3081e7c936.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Home-->
+    <section class="home">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo" alt="">
+                    <ul id="sideMenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars " onclick="openMenu()"></i>
+                </nav>
+                <div id="home-content">
+                    <div class="header-text">
+                        <h1>Hi, I'm <br> <span>  Mayuresh Kamble</span></h1>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="main-img">
+                        <img id="my-img" src="images/main.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About-->
+    <section class="secAbout">
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.JPG" id="im" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p id="pId">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vel vitae labore ab, sint harum maiores ipsa atque modi, porro magnam sunt eaque iste in commodi voluptates quis laboriosam dolores.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links " onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Core Java</span><br>Core Java Developer</li>
+                                <li><span>Web Development</span><br>Web Developer HTML,CSS,JS</li>
+                                <li><span>Graphics Designing</span><br>Graphics Designer using AI,Figma</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2018-20</span><br>Head,Student Association</li>
+                                <li><span>2018-20</span><br>Head,Student Association</li>
+                                <li><span>2018-20</span><br>Head,Student Association</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>B.Tech</li>
+                                <li><span>2018</span><br>HSC</li?>
+                                    <li><span>2016</span><br>SSC</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--services-->
+    <section class="secServices">
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi?</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi?</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Graphics Designing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi?</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, harum.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, harum.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, harum.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="content-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>mayureshk27@agmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+919403406558</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/mayureshkamble/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/mayureshkamble/"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="content-right">
+                        <form name='submit-to-google-sheet' action="">
+                            <input type="text" name="Name" id="" placeholder="Your Name" required>
+                            <input type="email" name="email" id="" placeholder="Your email" required>
+                            <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="script.js
+    "></script>
+    <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+    </form>
+
+
+
+</body>
+<footer>
+    <div class="copyright">
+        <p>Designed And Developed by: <br> Mayuresh Kamble</p>
+    </div>
+</footer>
+
+</html>
