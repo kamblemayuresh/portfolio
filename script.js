@@ -1,11 +1,11 @@
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabName) {
-    for (tabLink of tabLinks) {
+function openTab(tabName) {
+    for (let tabLink of tabLinks) {
         tabLink.classList.remove("active-link");
     }
-    for (tabContent of tabContents) {
+    for (let tabContent of tabContents) {
         tabContent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
@@ -46,5 +46,18 @@ form.addEventListener('submit', e => {
             }
 
         )
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => {
+            msg.innerHTML = "Error! Please Try Again"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+})
+
+var typed = new typed(".typing", {
+    strings: ["", "Web Designer", "web Developer", "Android Application Developer", "Java Developer", "Graphic Designer"],
+    typeSpeed: 100,
+    BackSpeed: 60,
+    loop: true
 })
